@@ -1,0 +1,55 @@
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url("./global.css");
+@import url("./variables.css");
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 0 20px;
+}
+
+.counter {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.counter__quantity {
+  color: var(--color-black-gray);
+  font-weight: 700;
+}
+
+.counter__button-click,
+.counter__button-reset {
+  font-weight: 500;
+  border: none;
+  color: var(--color-white);
+  border-radius: 16px;
+  padding: 10px 10px;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.counter__button-click:hover,
+.counter__button-reset:hover {
+  color: var(--color-black-gray);
+}
+
+.counter__button-click {
+  background: var(--color-blue);
+}
+
+.counter__button-reset {
+  background: var(--color-accent);
+}
+
+.counter__button-click:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
